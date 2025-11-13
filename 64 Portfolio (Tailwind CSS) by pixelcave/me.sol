@@ -1,3 +1,5 @@
+//PLEASE IGNORE THIS FILE AS IT IS NOT PART OF THE PROJECT, Thanks
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.26;
 
