@@ -1,5 +1,18 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth"
+ x-data="{
+        darkMode: false,
+        toggleDarkMode() {
+          this.darkMode = ! this.darkMode;
+
+          // Toggle dark class on html element
+          if (this.darkMode) {
+            document.body.parentNode.classList.add('dark');
+          } else {
+            document.body.parentNode.classList.remove('dark');
+          }
+        }
+      }">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -62,21 +75,7 @@
   </head>
   <body  class="antialiased transition-colors duration-300 ease-in-out">
     <!-- Page Container -->
-    <div
-      x-data="{
-        darkMode: false,
-        toggleDarkMode() {
-          this.darkMode = ! this.darkMode;
-
-          // Toggle dark class on html element
-          if (this.darkMode) {
-            document.body.parentNode.classList.add('dark');
-          } else {
-            document.body.parentNode.classList.remove('dark');
-          }
-        }
-      }"
-      class="min-h-dvh min-w-80 bg-white text-zinc-800 dark:bg-zinc-950 dark:text-zinc-100"
+    <div     class="min-h-dvh min-w-80 bg-white text-zinc-800 dark:bg-zinc-950 dark:text-zinc-100"
     >
       <!-- Page Content -->
       <main
@@ -91,7 +90,7 @@
           <div class="flex items-center gap-2">
             <!-- Logo -->
             <a
-              href="javascript:void(0)"
+              href="/"
               class="text-2xl font-thin tracking-widest hover:text-purple-600 active:opacity-75 dark:hover:text-purple-400"
             >
               Daniel
@@ -185,7 +184,7 @@
           <!-- Photo -->
           <div class="col-span-1 md:col-span-5">
             <img
-              src="assets\Untitled design (6).png"
+              src="assets/Untitled design (6).png"
               alt="Photo"
               class="rounded-xl object-cover w-full aspect-square"
             />
@@ -256,7 +255,7 @@
               class="mt-10 transition duration-150 ease-out group-hover:scale-105"
             >
               <img
-                src="assets\Bitestooths.png"
+                src="assets/Bitestooths.png"
                 width="12px"
                 height="12px"
                 alt="Project 1"
@@ -298,7 +297,7 @@
               class="mt-10 transition duration-150 ease-out group-hover:scale-105"
             >
               <img
-                src="assets\07.10.2025_16.17.45_REC.png"
+                src="assets/07.10.2025_16.17.45_REC.png"
                 alt="Project 2"
                 width="12px"
                 height="12px"
@@ -338,7 +337,7 @@
               class="mt-10 transition duration-150 ease-out group-hover:scale-105"
             >
               <img
-                src="assets\12.03.2025_09.02.16_REC.png"
+                src="assets/12.03.2025_09.02.16_REC.png"
                 width="12px"
                 height="12px"
                 alt="Project 3"
@@ -380,7 +379,7 @@
               class="mt-10 transition duration-150 ease-out group-hover:scale-105"
             >
               <img
-                src="assets\Los-Feliz.png"
+                src="assets/Los-Feliz.png"
                 width="12px"
                 height="12px"
                 alt="Project 4"
@@ -420,7 +419,7 @@
               class="mt-10 transition duration-150 ease-out group-hover:scale-105"
             >
               <img
-                src="assets\Stripe.png"
+                src="assets/Stripe.png"
                 width="12px"
                 height="12px"
                 alt="Project 5"
@@ -461,7 +460,7 @@
               class="mt-10 transition duration-150 ease-out group-hover:scale-105"
             >
               <img
-                src="assets\Resume_generator.png"
+                src="assets/Resume_generator.png"
                 width="12px"
                 height="12px"
                 alt="Project 6"
